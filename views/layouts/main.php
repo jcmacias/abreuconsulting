@@ -10,6 +10,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+$active=Yii::$app->params['active'];
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -43,11 +44,11 @@ AppAsset::register($this);
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><?= Html::a('Home', ['site/index']) ?></li>
-                        <li><?= Html::a('Profile', ['site/profile']) ?></li>
-                        <li><?= Html::a('Services', ['site/service']) ?></li>
-                        <li><?= Html::a('Documents', ['site/document']) ?></li>
-                        <li><?= Html::a('Contact Us', ['site/contact']) ?></li>
+                        <li <?= $active == 'home' ? 'class="active"' : '';?>><?= Html::a('Home', ['site/index']) ?></li>
+                        <li <?= $active == 'profile' ? 'class="active"' : '';?>><?= Html::a('Profile', ['site/profile']) ?></li>
+                        <li <?= $active == 'service' ? 'class="active"' : '';?>><?= Html::a('Services', ['site/service']) ?></li>
+                        <li <?= $active == 'document' ? 'class="active"' : '';?>><?= Html::a('Documents', ['site/document']) ?></li>
+                        <li <?= $active == 'contact' ? 'class="active"' : '';?>><?= Html::a('Contact Us', ['site/contact']) ?></li>
                     </ul>
                 </div>
 

@@ -5,6 +5,7 @@
 use yii\helpers\Html;
 
 $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
+Yii::$app->params['active'] = 'home';
 ?>
 <div class="site-index">
     <!--BANNER START-->
@@ -65,7 +66,7 @@ $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
                         <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
                         <div class="service-text">
                             <h3>Courses</h3>
-                            <p> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                            <p>Learning is a collaborative process, and we're here to provide you with guidance every step of the way.</p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +92,8 @@ $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
             <div class="row">
                 <div class="page-title text-center">
                     <h1>Quick Contact</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. </p>
+                    <p>If you have business inquiries or other questions, please fill out
+                        the following form to contact us. Thank you. </p>
                     <hr class="pg-titl-bdr-btm"></hr>
                 </div>
                 <div id="sendmessage">Your message has been sent. Thank you!</div>

@@ -24,6 +24,7 @@ body {
 .jumbotron {
     text-align: center;
     background-color: transparent;
+    padding-top: 160px;
 }
 
 .jumbotron .btn {
@@ -124,6 +125,10 @@ a.desc:after {
 }
 .navbar-nav {
     padding-top: 50px;
+}
+/*GENERAL*/
+.page-title {
+    margin-top: 90px;
 }
 /*CONTACT*/
 .contact-data {

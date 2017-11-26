@@ -10,6 +10,7 @@ use yii\captcha\Captcha;
 
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
+Yii::$app->params['active'] = 'contact';
 ?>
 <div class="container">
     <div class="site-contact">
@@ -46,11 +47,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box'])->label(false) ?>
+                <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box', 'placeholder'=>'Name'])->label(false) ?>
 
-                <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box'])->label(false) ?>
+                <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Email'])->label(false) ?>
 
-                <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box'])->label(false) ?>
+                <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Subject'])->label(false) ?>
 
                 <?= $form->field($model, 'body')->textarea(['rows' => 3, 'class' => 'form-control text-field-box'])->label(false) ?>
 
