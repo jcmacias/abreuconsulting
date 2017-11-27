@@ -14,7 +14,7 @@ Yii::$app->params['active'] = 'contact';
 ?>
 <div class="container">
     <div class="site-contact">
-        <div class="page-title text-center">
+        <div class="page-title2 text-center">
             <h1><?= Html::encode($this->title) ?></h1>
             <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
