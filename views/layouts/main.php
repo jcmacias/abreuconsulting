@@ -49,7 +49,13 @@ $active=Yii::$app->params['active'];
                         <li <?= $active == 'service' ? 'class="active"' : '';?>><?= Html::a('Services', ['site/service']) ?></li>
                         <li <?= $active == 'document' ? 'class="active"' : '';?>><?= Html::a('Documents', ['site/document']) ?></li>
                         <li <?= $active == 'contact' ? 'class="active"' : '';?>><?= Html::a('Contact Us', ['site/contact']) ?></li>
+                        <li><?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+                                'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+                                'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_SMALL
+                            ]); ?>
+                        </li>
                     </ul>
+
                 </div>
 
             </div>

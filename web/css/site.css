@@ -130,6 +130,10 @@ a.desc:after {
 .page-title2 {
     margin-top: 90px;
 }
+.text-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /*CONTACT*/
 .contact-data {
     padding: 10px 0 10px 0;
