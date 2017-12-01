@@ -134,6 +134,15 @@ a.desc:after {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.language-picker a {
+    text-decoration: none;
+    color: #354242;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
 /*CONTACT*/
 .contact-data {
     padding: 10px 0 10px 0;

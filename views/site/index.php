@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\web\View;
 
 $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
 Yii::$app->params['active'] = 'home';
@@ -13,8 +14,8 @@ Yii::$app->params['active'] = 'home';
         <div class="container">
             <div class="row">
                 <div class="jumbotron">
-                    <h1 class="small">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
-                    <p class="big">Income Tax & Inmigration Services</p>
+                    <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
+                    <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Inmigration Services</p>
                     <?= Html::a('Learn More<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
                 </div>
             </div>
@@ -127,3 +128,12 @@ Yii::$app->params['active'] = 'home';
     <!--CONTACT END-->
 
 </div>
+<?= $this->registerJs(
+    "
+    $(function () {
+	$('.tlt').textillate();
+})
+",
+    View::POS_READY,
+    'Lettering'
+); ?>

@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'language' => 'en',
+    'sourceLanguage'=>'en',
     'bootstrap' => ['languagepicker'],
     'components' => [
         'languagepicker' => [
