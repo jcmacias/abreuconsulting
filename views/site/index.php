@@ -15,7 +15,7 @@ Yii::$app->params['active'] = 'home';
             <div class="row">
                 <div class="jumbotron">
                     <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
-                    <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Inmigration Services</p>
+                    <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Immigration Services</p>
                     <?= Html::a('Learn More<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
                 </div>
             </div>
