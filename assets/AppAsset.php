@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/font-awesome.min.css',
         'css/slick-team-slider.css',
+        'css/animate.css',
         'css/style.css',
         'css/site.css',
     ];
@@ -28,6 +29,8 @@ class AppAsset extends AssetBundle
         'js/bootstrap.min.js',
         'js/jquery.mixitup.js',
         'js/slick.min.js',
+        'js/jquery.lettering.js',
+        'js/jquery.textillate.js',
         'js/custom.js',
     ];
     public $depends = [

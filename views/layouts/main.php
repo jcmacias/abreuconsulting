@@ -44,12 +44,18 @@ $active=Yii::$app->params['active'];
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li <?= $active == 'home' ? 'class="active"' : '';?>><?= Html::a('Home', ['site/index']) ?></li>
-                        <li <?= $active == 'profile' ? 'class="active"' : '';?>><?= Html::a('Profile', ['site/profile']) ?></li>
-                        <li <?= $active == 'service' ? 'class="active"' : '';?>><?= Html::a('Services', ['site/service']) ?></li>
-                        <li <?= $active == 'document' ? 'class="active"' : '';?>><?= Html::a('Documents', ['site/document']) ?></li>
-                        <li <?= $active == 'contact' ? 'class="active"' : '';?>><?= Html::a('Contact Us', ['site/contact']) ?></li>
+                        <li <?= $active == 'home' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Home'), ['site/index']) ?></li>
+                        <li <?= $active == 'profile' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Profile'), ['site/profile']) ?></li>
+                        <li <?= $active == 'service' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Services'), ['site/service']) ?></li>
+                        <li <?= $active == 'document' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Documents'), ['site/document']) ?></li>
+                        <li <?= $active == 'contact' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Contact Us'), ['site/contact']) ?></li>
+                        <li><?= \lajax\languagepicker\widgets\LanguagePicker::widget([
+                                'skin' => \lajax\languagepicker\widgets\LanguagePicker::SKIN_DROPDOWN,
+                                'size' => \lajax\languagepicker\widgets\LanguagePicker::SIZE_SMALL
+                            ]); ?>
+                        </li>
                     </ul>
+
                 </div>
 
             </div>

@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\web\View;
 
 $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
 Yii::$app->params['active'] = 'home';
@@ -13,9 +14,9 @@ Yii::$app->params['active'] = 'home';
         <div class="container">
             <div class="row">
                 <div class="jumbotron">
-                    <h1 class="small">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
-                    <p class="big">Income Tax & Inmigration Services</p>
-                    <a href="#" class="btn btn-banner">Learn More<i class="fa fa-send"></i></a>
+                    <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
+                    <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Inmigration Services</p>
+                    <?= Html::a('Learn More<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@ Yii::$app->params['active'] = 'home';
                         <div class="service-icon"><i class="fa fa-money"></i></div>
                         <div class="service-text">
                             <h3>Income Tax</h3>
-                            <p>Our company count with more than 15 years of experience of making taxes super simple.</p>
+                            <p>Our company count with more than 10 years of experience of making taxes super simple.</p>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@ Yii::$app->params['active'] = 'home';
     <div class="cta2">
         <div class="container">
             <div class="row white text-center">
-                <h3 class="wd75 fnt-24">“Every Thing is designed. Few Things are Designed well.” - Brian Reed</h3>
+                <h3 class="wd75 fnt-24">We have a team of highly qualified experts ready to work for you!</h3>
                 <p class="cta-sub-title"></p>
                 <?= Html::a('Request A Quote', ['site/contact'],['class'=>'btn btn-default']) ?>
             </div>
@@ -127,3 +128,12 @@ Yii::$app->params['active'] = 'home';
     <!--CONTACT END-->
 
 </div>
+<?= $this->registerJs(
+    "
+    $(function () {
+	$('.tlt').textillate();
+})
+",
+    View::POS_READY,
+    'Lettering'
+); ?>

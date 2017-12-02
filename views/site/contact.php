@@ -14,7 +14,7 @@ Yii::$app->params['active'] = 'contact';
 ?>
 <div class="container">
     <div class="site-contact">
-        <div class="page-title text-center">
+        <div class="page-title2 text-center">
             <h1><?= Html::encode($this->title) ?></h1>
             <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
@@ -96,11 +96,11 @@ Yii::$app->params['active'] = 'contact';
                     google.maps.event.addDomListener(window, 'load', init_map);</script>
                 <div class="contact-data">
                     <p><i class="fa fa-map-marker"></i> 6850 Coral Way #401, Miami, FL 33155<br/>
-                    <i class="fa fa-phone"></i> <a href="tel:+7863626494">786.362.6494</a><br/>
-                    <i class="fa fa-phone"></i> <a href="tel:+3058342923">305.834.2923</a><br/>
+                    <i class="fa fa-phone"></i> <a href="tel:7863626494">786.362.6494</a><br/>
+                    <i class="fa fa-phone"></i> <a href="tel:3058342923">305.834.2923</a><br/>
                     <i class="fa fa-fax"></i> <a href="tel:+7863911203">786.391.1203</a><br/>
                     <i class="fa fa-envelope"></i> <a href="mailto:info@abreuconsultinggroup.com">info@abreuconsultinggroup.com</a><br/>
-                    <i class="fa fa-envelope"></i> <a href="mailto:riatineo@hotmail.com">riatineo@hotmail.com</a></p>
+<!--                    <i class="fa fa-envelope"></i> <a href="mailto:riatineo@hotmail.com">riatineo@hotmail.com</a></p>-->
                 </div>
             </div>
         </div>
