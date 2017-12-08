@@ -14,7 +14,8 @@ Yii::$app->params['active'] = 'home';
         <div class="container">
             <div class="row">
                 <div class="jumbotron">
-                    <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To <span class="bold">Abreu Consulting Group</span></h1>
+                    <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To</h1>
+                    <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true"><span class="bold">Abreu Consulting Group</span></h1>
                     <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Immigration Services</p>
                     <?= Html::a('Learn More<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
                 </div>
@@ -27,8 +28,8 @@ Yii::$app->params['active'] = 'home';
     <div class="cta-1">
         <div class="container">
             <div class="row text-center white">
-                <h1 class="cta-title">Get your maximum tax refund!!</h1>
-                <p class="cta-sub-title">Know the difference between getting your taxes done, and getting your taxes won.</p>
+                <h1 class="cta-title tlt" data-in-effect="fadeInUp">Get your maximum tax refund!!</h1>
+                <p class="cta-sub-title tlt" data-in-effect="wobble">Know the difference between getting your taxes done, and getting your taxes won.</p>
 
             </div>
         </div>
@@ -45,7 +46,7 @@ Yii::$app->params['active'] = 'home';
                     <hr class="pg-titl-bdr-btm"></hr>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box">
+                    <div class="service-box" data-aos="fade-right">
                         <div class="service-icon"><i class="fa fa-money"></i></div>
                         <div class="service-text">
                             <h3>Income Tax</h3>
@@ -54,7 +55,7 @@ Yii::$app->params['active'] = 'home';
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box">
+                    <div class="service-box " data-aos="fade-up">
                         <div class="service-icon"><i class="fa fa-suitcase"></i></div>
                         <div class="service-text">
                             <h3>Immigration</h3>
@@ -63,7 +64,7 @@ Yii::$app->params['active'] = 'home';
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service-box">
+                    <div class="service-box" data-aos="fade-left">
                         <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
                         <div class="service-text">
                             <h3>Courses</h3>
@@ -79,7 +80,7 @@ Yii::$app->params['active'] = 'home';
     <div class="cta2">
         <div class="container">
             <div class="row white text-center">
-                <h3 class="wd75 fnt-24">We have a team of highly qualified experts ready to work for you!</h3>
+                <h3 class="wd75 fnt-24 fadeIn">We have a team of highly qualified experts ready to work for you!</h3>
                 <p class="cta-sub-title"></p>
                 <?= Html::a('Request A Quote', ['site/contact'],['class'=>'btn btn-default']) ?>
             </div>
@@ -100,7 +101,7 @@ Yii::$app->params['active'] = 'home';
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
 
-                <div class="form-sec">
+                <div class="form-sec" data-aos="zoom-in">
                     <form action="" method="post" role="form" class="contactForm">
                         <div class="col-md-4 form-group">
                             <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -129,7 +130,7 @@ Yii::$app->params['active'] = 'home';
 
 </div>
 <?= $this->registerJs(
-    "
+    "    
     $(function () {
 	$('.tlt').textillate();
 })

@@ -21,6 +21,7 @@ class AppAsset extends AssetBundle
         'css/font-awesome.min.css',
         'css/slick-team-slider.css',
         'css/animate.css',
+        'css/aos.css',
         'css/style.css',
         'css/site.css',
     ];
@@ -32,6 +33,8 @@ class AppAsset extends AssetBundle
         'js/jquery.lettering.js',
         'js/jquery.textillate.js',
         'js/custom.js',
+        'js/aos.js',
+        'js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

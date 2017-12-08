@@ -8,13 +8,147 @@
 Yii::$app->params['active'] = 'service';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-
-<div class="container">
-    <div class="site-service">
-        <div class="page-title2 text-center">
+<div id="portfolio">
+    <div class="container">
+        <div class="page-title text-center">
             <h1>Services</h1>
             <p>We offer a wide range of services that are individually<br/> tailored to meet our client's needs.</p>
+            <hr class="pg-titl-bdr-btm"></hr>
         </div>
-        <hr class="pg-titl-bdr-btm">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul id="portfolio-flters">
+                    <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
+                    <li data-filter=".filter-app">Income Tax</li>
+                    <li data-filter=".filter-card">Immigration Services</li>
+                    <li data-filter=".filter-logo">Courses</li>
+                    <li data-filter=".filter-web">Others</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="img/portfolio/app1.jpg" alt="">
+                    <div class="details">
+                        <h4>App 1</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+                <a href="">
+                    <img src="img/portfolio/web2.jpg" alt="">
+                    <div class="details">
+                        <h4>Web 2</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="img/portfolio/app3.jpg" alt="">
+                    <div class="details">
+                        <h4>App 3</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                <a href="">
+                    <img src="img/portfolio/card1.jpg" alt="">
+                    <div class="details">
+                        <h4>Card 1</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                <a href="">
+                    <img src="img/portfolio/card2.jpg" alt="">
+                    <div class="details">
+                        <h4>Card 2</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+                <a href="">
+                    <img src="img/portfolio/web3.jpg" alt="">
+                    <div class="details">
+                        <h4>Web 3</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+                <a href="">
+                    <img src="img/portfolio/card3.jpg" alt="">
+                    <div class="details">
+                        <h4>Card 3</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="img/portfolio/app2.jpg" alt="">
+                    <div class="details">
+                        <h4>App 2</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+                <a href="">
+                    <img src="img/portfolio/logo1.jpg" alt="">
+                    <div class="details">
+                        <h4>Logo 1</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+                <a href="">
+                    <img src="img/portfolio/logo3.jpg" alt="">
+                    <div class="details">
+                        <h4>Logo 3</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+                <a href="">
+                    <img src="img/portfolio/web1.jpg" alt="">
+                    <div class="details">
+                        <h4>Web 1</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+                <a href="">
+                    <img src="img/portfolio/logo2.jpg" alt="">
+                    <div class="details">
+                        <h4>Logo 2</h4>
+                        <span>Alored dono par</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
+<!--<img src="img/sample.png" alt="Sample">-->
+

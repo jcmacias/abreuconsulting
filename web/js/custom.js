@@ -1,5 +1,5 @@
 (function ($) {
-    
+
     // Navigation scrolls
     $('.navbar-nav li a').bind('click', function(event) {
         $('.navbar-nav li').removeClass('active');
@@ -7,17 +7,29 @@
         var $anchor = $(this);
         var nav = $($anchor.attr('href'));
         if (nav.length) {
-        $('html, body').stop().animate({				
-            scrollTop: $($anchor.attr('href')).offset().top				
-        }, 1500, 'easeInOutExpo');
-        
-        event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 78
+            }, 1500, 'easeInOutExpo');
+
+            event.preventDefault();
         }
     });
-       
 
-    // Instantiate MixItUp:
-    $('#Container').mixItUp();
+    // Porfolio filer
+    $("#portfolio-flters li").click ( function() {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        var selectedFilter = $(this).data("filter");
+        $("#portfolio-wrapper").fadeTo(100, 0);
+
+        $(".portfolio-item").fadeOut().css('transform', 'scale(0)');
+
+        setTimeout(function() {
+            $(selectedFilter).fadeIn(100).css('transform', 'scale(1)');
+            $("#portfolio-wrapper").fadeTo(300, 1);
+        }, 300);
+    });
 
     // Team Slider
     $('.autoplay').slick({
@@ -55,5 +67,5 @@
             // instead of a settings object
         ]
     });
-    
+
 })(jQuery);
