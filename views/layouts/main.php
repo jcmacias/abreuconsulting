@@ -69,6 +69,9 @@ $active=Yii::$app->params['active'];
         ]) ?>
     </div>
     <?= $content ?>
+    <div class="container">
+        <p class="disclaimer">The IRS does not endorse any particular individual tax return preparer. For more information on tax return preparers go to IRS.gov.</p>
+    </div>
 </div>
 <!--FOOTER START-->
 <footer class="footer section-padding">

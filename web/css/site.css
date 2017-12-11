@@ -144,6 +144,11 @@ a.desc:after {
     padding-bottom: 5px;
     font-size: 14px;
 }
+.disclaimer {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /*SERVICE*/
 
 /*SERVICE*/
