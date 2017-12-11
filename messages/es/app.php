@@ -21,6 +21,7 @@ return [
     'Profile' => 'Perfil',
     'Services' => 'Servicios',
     'Contact Us' => 'Contactos',
+    'Documents' => 'Documentos',
     '(empty)' => '(vacio)',
     'Contact us today.' => 'Contactenos hoy.',
     'We\'ll help you to find the best price.' => 'Lo ayudaremos a obtener el mejor precio.',

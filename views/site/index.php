@@ -13,7 +13,7 @@ Yii::$app->params['active'] = 'home';
     <div id="banner" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="jumbotron">
+                <div class="jumbotron" >
                     <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true">Welcome To</h1>
                     <h1 class="small tlt" data-in-effect="fadeIn" data-out-shuffle="true"><span class="bold">Abreu Consulting Group</span></h1>
                     <p class="big tlt" data-in-effect="bounceInDown">Income Tax & Immigration Services</p>
@@ -28,8 +28,8 @@ Yii::$app->params['active'] = 'home';
     <div class="cta-1">
         <div class="container">
             <div class="row text-center white">
-                <h1 class="cta-title tlt" data-in-effect="fadeInUp">Get your maximum tax refund!!</h1>
-                <p class="cta-sub-title tlt" data-in-effect="wobble">Know the difference between getting your taxes done, and getting your taxes won.</p>
+                <h1 class="cta-title tlt" data-in-effect="fadeInUp">We believe in the value of relationships.</h1>
+                <p class="cta-sub-title tlt" data-in-effect="wobble">We view every client relationship like a partnership, and truly believe that our success is a result of your success.</p>
 
             </div>
         </div>
@@ -49,8 +49,8 @@ Yii::$app->params['active'] = 'home';
                     <div class="service-box" data-aos="fade-right">
                         <div class="service-icon"><i class="fa fa-money"></i></div>
                         <div class="service-text">
-                            <h3>Income Tax</h3>
-                            <p>Our company count with more than 10 years of experience of making taxes super simple.</p>
+                            <h3>Tax Preparation</h3>
+                            <p>Our company count with more than 8 years of experience of making taxes super simple.</p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,8 @@ Yii::$app->params['active'] = 'home';
                     <div class="service-box " data-aos="fade-up">
                         <div class="service-icon"><i class="fa fa-suitcase"></i></div>
                         <div class="service-text">
-                            <h3>Immigration</h3>
-                            <p>We have assisted hundreds of thousands of clients with their immigration applications.</p>
+                            <h3>Immigration Services</h3>
+                            <p>We have assisted hundreds of clients with their immigration applications.</p>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ Yii::$app->params['active'] = 'home';
                     <div class="service-box" data-aos="fade-left">
                         <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
                         <div class="service-text">
-                            <h3>Courses</h3>
+                            <h3>Courses(Coming Soon)</h3>
                             <p>Learning is a collaborative process, and we're here to provide you with guidance every step of the way.</p>
                         </div>
                     </div>

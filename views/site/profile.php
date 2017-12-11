@@ -12,33 +12,27 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container">
     <div class="site-service">
         <div class="page-title2 text-center">
-            <h1>Profile</h1>
-            <p>For more than a decade with thousands of satisfied customers,<br/> our work speaks for itself.</p>
+            <h1>Our Mission</h1>
+            <p>Almost a decade with hundreds of satisfied customers,<br/> our work speaks for itself.</p>
         </div>
         <hr class="pg-titl-bdr-btm">
         <div class="row">
             <div class="col-lg-12">
-                <img src="/img/profile.png" class="img-responsive" alt="Miami Consulting">
+                <img src="/img/mission.jpg" class="img-responsive" alt="Miami Consulting">
             </div>
             <div class="col-lg-12 text-block">
-                <p>Abreu consulting Group, es una compañía con mas de 10 años de experiencia brindando servicios de
-                    asistencia de inmigración y preparación de declaraciones de impuestos para personas naturales y
-                    compañías.</p>
-                <h4>Asistencia de Inmigración:</h4>
-                <p> Nuestro portafolio de servicios incluye, asistencia con el llenado de aplicaciones y peticiones para
-                    ajuste de estatus y nacionalización, así como la traducción y revisión de documentos. Mantenemos
-                    informados a nuestros clientes con las últimas noticias y procedimientos de solicitud de inmigración
-                    en EE. UU, para que puedan realizar su petición sin la necesidad de contratar a un abogado de
-                    inmigración. </p>
-                <h4>Income Tax:</h4>
-                <p>Con el paso de los años ha crecido el número de clientes depositan su confianza en Abreu consulting
-                    Group para manejar sus finanzas, lo cual ha hecho que nuestra firma cada vez brinde un servicio mas
-                    personalizado y especializado. Ofreciendo servicios como ITIN( Numero de taxes),
-                    Contabilidad(bookkeping), Corporaciones/ EIN, y Plan de negocios. Ayudamos con la preparación de
-                    declaraciones de impuestos federales y estatales individuales y podemos aprovechar esta oportunidad
-                    para considerar sus activos e inversiones y su eficiencia tributaria.</p>
-                <h4>Otros:</h4>
-                <p>También brindamos asistencia con solicitudes de divorcios , pensión alimenticia y cursos sobre finanzas.</p>
+                <p>Our mission is to provide the highest level of service, convenience and support to our clients. We
+                    are committed to maintaining the highest standards of integrity and professionalism in our
+                    relationship with you, our client. </p>
+                <p>If you’re looking for a firm that will focus on your individual needs, and always treat you like a
+                    client who matters, look no further. Our firm is large enough to offer a full range of professional
+                    services, but small enough to give you the individual attention that you deserve. </p>
+                <p>We believe in the value of relationships. We view every client relationship like a partnership, and
+                    truly believe that our success is a result of your success. We are committed to providing close,
+                    personal attention to our clients. </p>
+                <p>We take pride in giving you the assurance that the personal assistance you receive comes from years
+                    of advanced training, technical experience and financial acumen. We will thoroughly and
+                    conscientiously study your personal situation, and tailor our advice to your specific needs.</p>
             </div>
         </div>
     </div>

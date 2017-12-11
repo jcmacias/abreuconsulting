@@ -45,7 +45,7 @@ $active=Yii::$app->params['active'];
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li <?= $active == 'home' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Home'), ['site/index']) ?></li>
-                        <li <?= $active == 'profile' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Profile'), ['site/profile']) ?></li>
+                        <li <?= $active == 'profile' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Mission'), ['site/profile']) ?></li>
                         <li <?= $active == 'service' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Services'), ['site/service']) ?></li>
                         <li <?= $active == 'document' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Documents'), ['site/document']) ?></li>
                         <li <?= $active == 'contact' ? 'class="active"' : '';?>><?= Html::a(Yii::t('app','Contact Us'), ['site/contact']) ?></li>
@@ -78,10 +78,10 @@ $active=Yii::$app->params['active'];
                 <h3>Follow us on</h3>
                 <div class="footer_social">
                     <ul>
-                        <li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="f_facebook" href="https://www.facebook.com/abreuCG/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="f_twitter" href="https://twitter.com/abreu_group"><i class="fa fa-twitter"></i></a></li>
+<!--                        <li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                        <li><a class="f_linkedin" href="https://www.linkedin.com/company/abreucg"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>

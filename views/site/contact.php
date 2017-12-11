@@ -99,7 +99,8 @@ Yii::$app->params['active'] = 'contact';
                     <i class="fa fa-phone"></i> <a href="tel:7863626494">786.362.6494</a><br/>
                     <i class="fa fa-phone"></i> <a href="tel:3058342923">305.834.2923</a><br/>
                     <i class="fa fa-fax"></i> <a href="tel:+7863911203">786.391.1203</a><br/>
-                    <i class="fa fa-envelope"></i> <a href="mailto:info@abreuconsultinggroup.com">info@abreuconsultinggroup.com</a><br/>
+                     <i class="fa fa-envelope"></i> <a href="mailto:info@abreuconsultinggroup.com">info@abreuconsultinggroup.com</a><br/>
+                     <i class="fa fa-envelope"></i> <a href="mailto:r.abreutineo@gmail.com">r.abreutineo@gmail.com</a><br/>
 <!--                    <i class="fa fa-envelope"></i> <a href="mailto:riatineo@hotmail.com">riatineo@hotmail.com</a></p>-->
                 </div>
             </div>
