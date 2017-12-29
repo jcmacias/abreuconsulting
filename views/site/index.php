@@ -4,6 +4,8 @@
 
 use yii\helpers\Html;
 use yii\web\View;
+use yii\bootstrap\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = 'Abreu consulting | Income Tax & Inmigration Services';
 Yii::$app->params['active'] = 'home';
@@ -102,26 +104,26 @@ Yii::$app->params['active'] = 'home';
                 <div id="errormessage"></div>
 
                 <div class="form-sec" data-aos="zoom-in">
-                    <form action="" method="post" role="form" class="contactForm">
+                    <?php $form = ActiveForm::begin([
+                        'id' => 'contact-form-home',
+//                        'action' => Url::to(['/site/contact']),
+                    ]); ?>
                         <div class="col-md-4 form-group">
-                            <input type="text" name="name" class="form-control text-field-box" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validation"></div>
+                            <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box','placeholder'=>'Your Name', 'data-rule'=>'minlen:4', 'data-msg'=>'Please enter at least 4 chars'])->label(false) ?>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="email" class="form-control text-field-box" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                            <div class="validation"></div>
+                            <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box','name'=>'email', 'id'=>'email', 'placeholder'=>'Your Email', 'data-rule'=>'email', 'data-msg'=>'"Please enter a valid email" '])->label(false) ?>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control text-field-box" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validation"></div>
+                            <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'name'=>'subject', 'id'=>'subject','placeholder'=>'Subject','data-rule'=>'minlen:4' ,'data-msg'=>'Please enter at least 8 chars of subject'])->label(false) ?>
                         </div>
                         <div class="col-md-12 form-group">
-                            <textarea class="form-control text-field-box" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validation"></div>
-
-                            <button class="button-medium" id="contact-submit" type="submit" name="contact">Submit Now</button>
+                            <?= $form->field($model, 'body')->textarea(['rows' => 5, 'class' => 'form-control text-field-box','name'=>'message','data-rule'=>'required', 'data-msg'=>'Please write something for us' ,'placeholder'=>'Message'])->label(false) ?>
+                            <?= Html::submitButton('Submit Now', ['class' => 'button-medium', 'name' => 'contact-button']) ?>
                         </div>
-                    </form>
+                    <?php ActiveForm::end(); ?>
+
+
                 </div>
             </div>
         </div>
