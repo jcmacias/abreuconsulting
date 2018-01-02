@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'adminEmail' => 'info@abreuconsultinggroup.com',
+    'adminEmail' => 'abreuconsultinggroup@gmail.com',
     'active'=> ''
 ];
