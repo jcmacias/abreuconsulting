@@ -19,7 +19,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/font-awesome.min.css',
-        'css/slick-team-slider.css',
+//        'css/slick-team-slider.css',
+        'js/slick/slick.css',
+        'js/slick/slick-theme.css',
         'css/animate.css',
         'css/aos.css',
         'css/style.css',
@@ -29,7 +31,6 @@ class AppAsset extends AssetBundle
         'js/jquery.easing.min.js',
         'js/bootstrap.min.js',
         'js/jquery.mixitup.js',
-        'js/slick.min.js',
         'js/jquery.lettering.js',
         'js/jquery.textillate.js',
         'js/custom.js',
