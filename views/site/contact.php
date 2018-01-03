@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
+$this->title =Yii::t('app','Contact');
 $this->params['breadcrumbs'][] = $this->title;
 Yii::$app->params['active'] = 'contact';
 ?>
@@ -19,7 +19,7 @@ Yii::$app->params['active'] = 'contact';
             <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
                 <div class="alert alert-success">
-                    Thank you for contacting us. We will respond to you as soon as possible.
+                    <?= Yii::t('app','Thank you for contacting us. We will respond to you as soon as possible.');?>
                 </div>
 
                 <p>
@@ -36,8 +36,9 @@ Yii::$app->params['active'] = 'contact';
 
             <?php else: ?>
             <p>
-                If you have business inquiries or other questions, please fill out<br> the following form to contact us.
-                Thank you.
+                <?= Yii::t('app','If you have business inquiries or other questions, please fill out');?> <br>
+                <?= Yii::t('app','the following form to contact us. Thank you.');?>
+
             </p>
             <hr class="pg-titl-bdr-btm"></hr>
         </div>
@@ -47,17 +48,39 @@ Yii::$app->params['active'] = 'contact';
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box', 'placeholder'=>'Name'])->label(false) ?>
+                <?php  if (Yii::$app->language=='en') {?>
+                    <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box', 'placeholder'=>'Name'])->label(false) ?>
+                <?php } ?>
 
-                <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Email'])->label(false) ?>
+                <?php  if (Yii::$app->language=='es') {?>
+                    <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box', 'placeholder'=>'Nombre'])->label(false) ?>
+                <?php } ?>
 
-                <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Subject'])->label(false) ?>
+                <?php  if (Yii::$app->language=='en') {?>
+                    <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Email'])->label(false) ?>
+                <?php } ?>
 
-                <?= $form->field($model, 'body')->textarea(['rows' => 3, 'class' => 'form-control text-field-box'])->label(false) ?>
+                <?php  if (Yii::$app->language=='es') {?>
+                    <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Correo Electrónico'])->label(false) ?>
+                <?php } ?>
+
+                <?php  if (Yii::$app->language=='en') {?>
+                    <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Subject'])->label(false) ?>
+                <?php } ?>
+
+                <?php  if (Yii::$app->language=='es') {?>
+                    <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'placeholder'=>'Asunto'])->label(false) ?>
+                <?php } ?>
+
+
+                    <?= $form->field($model, 'body')->textarea(['rows' => 3, 'class' => 'form-control text-field-box'])->label(false) ?>
+
+
 
 
                 <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'button-medium', 'name' => 'contact-button']) ?>
+
+                    <?= Html::submitButton(Yii::t('app','Submit'), ['class' => 'button-medium', 'name' => 'contact-button']) ?>
                 </div>
 
                 <?php ActiveForm::end(); ?>
@@ -109,6 +132,9 @@ Yii::$app->params['active'] = 'contact';
         <?php endif; ?>
     </div>
 </div>
+
+
+
 <!--<script>-->
 <!--    function initMap() {-->
 <!--        var uluru = {lat: -25.363, lng: 131.044};-->

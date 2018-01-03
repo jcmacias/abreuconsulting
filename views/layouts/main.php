@@ -70,7 +70,7 @@ $active=Yii::$app->params['active'];
     </div>
     <?= $content ?>
     <div class="container">
-        <p class="disclaimer">The IRS does not endorse any particular individual tax return preparer. For more information on tax return preparers go to IRS.gov.</p>
+        <p class="disclaimer"><?= Yii::t('app','The IRS does not endorse any particular individual tax return preparer. For more information on tax return preparers go to IRS.gov.');?></p>
     </div>
 </div>
 <!--FOOTER START-->
@@ -78,7 +78,7 @@ $active=Yii::$app->params['active'];
     <div class="container">
         <div class="row">
             <div style="visibility: visible; animation-name: zoomIn;" class="col-sm-12 text-center wow zoomIn">
-                <h3>Follow us on</h3>
+                <h3><?= Yii::t('app','Follow us on');?></h3>
                 <div class="footer_social">
                     <ul>
                         <li><a class="f_facebook" href="https://www.facebook.com/abreuCG/"><i class="fa fa-facebook"></i></a></li>
@@ -99,7 +99,7 @@ $active=Yii::$app->params['active'];
     <div class="container">
         <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
             <div class="footer_copyright">
-                <p> © Copyright, All Rights Reserved.</p>
+                <p><?= Yii::t('app',' © Copyright, All Rights Reserved.');?></p>
                 <div class="credits">
                     &copy; Abreu Consulting Group <?= date('Y') ?>
                 </div>

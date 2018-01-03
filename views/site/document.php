@@ -11,8 +11,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container">
     <div class="site-service">
         <div class="page-title2 text-center">
-            <h1>Documents</h1>
-            <p>Your time is important to us. <br>Now, you can fill out these forms and speed up your process.</p>
+            <h1><?= Yii::t('app','Documents');?></h1>
+            <p><?= Yii::t('app','Your time is important to us.');?> <br> <?= Yii::t('app','Now, you can fill out these forms and speed up your process.');?></p>
             <hr class="pg-titl-bdr-btm"></hr>
         </div>
 
@@ -23,15 +23,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
             </tr>
             <tr>
-                <td><a href="/doc/New%20Client%20Data%20Sheet%20Spanish.pdf">New Client Data Sheet (Spanish)</a></td>
+                <td><a href="/doc/New%20Client%20Data%20Sheet%20Spanish.pdf">Nueva Hoja de Datos del Cliente (Spanish)</a></td>
 
             </tr>
             <tr>
-                <td><a href="/doc/New%20Self%20Employee%20English.pdf">New Self Employee (English)</a></td>
+                <td><a href="/doc/New%20Self%20Employee%20English.pdf">New Self Employee Data Sheet(English)</a></td>
 
             </tr>
             <tr>
-                <td><a href="/doc/New%20Self%20Employee%20Spanish.pdf">New Self Employee (Spanish)</a></td>
+                <td><a href="/doc/New%20Self%20Employee%20Spanish.pdf">Nueva Hoja de Datos para Self Employee (Spanish)</a></td>
 
             </tr>
             <tr>

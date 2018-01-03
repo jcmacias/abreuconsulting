@@ -36,8 +36,12 @@ class SiteController extends Controller
                     'logout' => ['post'],
                 ],
             ],
+
+
         ];
     }
+
+
 
     /**
      * @inheritdoc
@@ -62,6 +66,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+
         return $this->render('index');
     }
 
