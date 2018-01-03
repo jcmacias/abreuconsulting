@@ -39,43 +39,17 @@ Yii::$app->params['active'] = 'home';
     <!--CTA1 END-->
 
     <!--SERVICE START-->
-    <div id="service" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="page-title text-center">
-                    <h1>Our Service</h1>
-                    <p>We offer a wide range of services that are individually tailored to meet our client's needs.</p>
-                    <hr class="pg-titl-bdr-btm"></hr>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box" data-aos="fade-right">
-                        <div class="service-icon"><i class="fa fa-money"></i></div>
-                        <div class="service-text">
-                            <h3>Tax Preparation</h3>
-                            <p>Our company count with more than 8 years of experience of making taxes super simple.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box " data-aos="fade-up">
-                        <div class="service-icon"><i class="fa fa-suitcase"></i></div>
-                        <div class="service-text">
-                            <h3>Immigration Services</h3>
-                            <p>We have assisted hundreds of clients with their immigration applications.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box" data-aos="fade-left">
-                        <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
-                        <div class="service-text">
-                            <h3>Courses(Coming Soon)</h3>
-                            <p>Learning is a collaborative process, and we're here to provide you with guidance every step of the way.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="page-title text-center">
+        <h1>Our Service</h1>
+        <p>We offer a wide range of services that are individually tailored to meet our client's needs.</p>
+        <hr class="pg-titl-bdr-btm"></hr>
+    </div>
+    <div id="service" class="">
+            <div><img src="/img/slider/1.jpg" alt="Abreu"></div>
+            <div><img src="/img/slider/2.jpeg" alt="Abreu"></div>
+            <div><img src="/img/slider/3.jpg" alt="Abreu"></div>
+            <div><img src="/img/slider/4.jpg" alt="Abreu"></div>
+            <div><img src="/img/slider/5.jpg" alt="Abreu"></div>
     </div>
     <!--SERVICE END-->
     <!--CTA2 START-->
@@ -94,31 +68,51 @@ Yii::$app->params['active'] = 'home';
     <div id="contact" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="page-title text-center">
-                    <h1>Quick Contact</h1>
-                    <p>If you have business inquiries or other questions, please fill out
-                        the following form to contact us. Thank you. </p>
-                    <hr class="pg-titl-bdr-btm"></hr>
-                </div>
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
+    <div class="page-title text-center">
+    <h1>Quick Contact</h1>
+<?php if (Yii::$app->session->hasFlash('contactFormSubmitted1')): ?>
 
-                <div class="form-sec" data-aos="zoom-in">
+    <div class="alert alert-success">
+        Thank you for contacting us. We will respond to you as soon as possible.
+    </div>
+
+    <p>
+        Note that if you turn on the Yii debugger, you should be able
+        to view the mail message on the mail panel of the debugger.
+        <?php if (Yii::$app->mailer->useFileTransport): ?>
+            Because the application is in development mode, the email is not sent but saved as
+            a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
+                                                                                                Please configure the
+            <code>useFileTransport</code> property of the <code>mail</code>
+            application component to be false to enable email sending.
+        <?php endif; ?>
+    </p>
+
+<?php else: ?>
+    <p>
+        If you have business inquiries or other questions, please fill out<br> the following form to contact us.
+        Thank you.
+    </p>
+    <hr class="pg-titl-bdr-btm">
+    </div>
+
+<!--data-aos="zoom-in"-->
+    <div class="form-sec">
                     <?php $form = ActiveForm::begin([
                         'id' => 'contact-form-home',
-//                        'action' => Url::to(['/site/contact']),
+                         'action' => Url::to(['/site/contact']),
                     ]); ?>
                         <div class="col-md-4 form-group">
-                            <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control text-field-box','placeholder'=>'Your Name', 'data-rule'=>'minlen:4', 'data-msg'=>'Please enter at least 4 chars'])->label(false) ?>
+                            <?= $form->field($model, 'name')->textInput(['class' => 'form-control text-field-box','placeholder'=>'Your Name'])->label(false) ?>
                         </div>
                         <div class="col-md-4 form-group">
-                            <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box','name'=>'email', 'id'=>'email', 'placeholder'=>'Your Email', 'data-rule'=>'email', 'data-msg'=>'"Please enter a valid email" '])->label(false) ?>
+                            <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'id'=>'email', 'placeholder'=>'Your Email'])->label(false) ?>
                         </div>
                         <div class="col-md-4 form-group">
-                            <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'name'=>'subject', 'id'=>'subject','placeholder'=>'Subject','data-rule'=>'minlen:4' ,'data-msg'=>'Please enter at least 8 chars of subject'])->label(false) ?>
+                            <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'id'=>'subject','placeholder'=>'Subject'])->label(false) ?>
                         </div>
                         <div class="col-md-12 form-group">
-                            <?= $form->field($model, 'body')->textarea(['rows' => 5, 'class' => 'form-control text-field-box','name'=>'message','data-rule'=>'required', 'data-msg'=>'Please write something for us' ,'placeholder'=>'Message'])->label(false) ?>
+                            <?= $form->field($model, 'body')->textarea(['rows' => 5, 'class' => 'form-control text-field-box','placeholder'=>'Message'])->label(false) ?>
                             <?= Html::submitButton('Submit Now', ['class' => 'button-medium', 'name' => 'contact-button']) ?>
                         </div>
                     <?php ActiveForm::end(); ?>
@@ -126,16 +120,30 @@ Yii::$app->params['active'] = 'home';
 
                 </div>
             </div>
+            <?php endif; ?>
         </div>
     </div>
     <!--CONTACT END-->
 
 </div>
+<?=
+    $this->registerJsFile(
+    '@web/js/slick/slick.min.js',
+    ['depends' => [\yii\web\JqueryAsset::className()]]
+    );?>
 <?= $this->registerJs(
-    "    
+    "  
     $(function () {
 	$('.tlt').textillate();
-})
+});
+ $('#service').slick({
+            infinite: true,
+            speed: 300,
+//            slidesToShow: 6,
+            centerMode: false,
+            variableWidth: true
+        });
+   
 ",
     View::POS_READY,
     'Lettering'
