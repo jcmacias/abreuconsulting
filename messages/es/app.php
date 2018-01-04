@@ -116,5 +116,5 @@ return [
     'Contact' => 'Contactenos',
     'Submit' => 'Enviar',
     'Image' => 'Imagen',
-    'Image' => 'Imagen',
+    'Image' => '',
 ];

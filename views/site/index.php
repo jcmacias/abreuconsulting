@@ -25,7 +25,7 @@ Yii::$app->params['active'] = 'home';
                     <?php } ?>
 
                     <?php  if (Yii::$app->language=='es') {?>
-                        <?= Html::a('Leer m�s<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
+                        <?= Html::a('Leer más<i class="fa fa-send"></i>', ['site/profile'],['class'=>'btn btn-banner']) ?>
                     <?php } ?>
 
 
@@ -118,18 +118,45 @@ Yii::$app->params['active'] = 'home';
                          'action' => Url::to(['/site/contact']),
                     ]); ?>
                         <div class="col-md-4 form-group">
+                            <?php  if (Yii::$app->language=='en') {?>
                             <?= $form->field($model, 'name')->textInput(['class' => 'form-control text-field-box','placeholder'=>'Your Name'])->label(false) ?>
+                            <?php } ?>
+                            <?php  if (Yii::$app->language=='es') {?>
+                                <?= $form->field($model, 'name')->textInput(['class' => 'form-control text-field-box','placeholder'=>'Nombre'])->label(false) ?>
+                            <?php } ?>
                         </div>
                         <div class="col-md-4 form-group">
+                            <?php  if (Yii::$app->language=='en') {?>
                             <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'id'=>'email', 'placeholder'=>'Your Email'])->label(false) ?>
+                            <?php } ?>
+                            <?php  if (Yii::$app->language=='es') {?>
+                                <?= $form->field($model, 'email')->textInput(['class' => 'form-control text-field-box', 'id'=>'email', 'placeholder'=>'Correo electrónico'])->label(false) ?>
+                            <?php } ?>
                         </div>
 
                         <div class="col-md-4 form-group">
+                            <?php  if (Yii::$app->language=='en') {?>
                             <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'id'=>'subject','placeholder'=>'Subject'])->label(false) ?>
+                            <?php } ?>
+                            <?php  if (Yii::$app->language=='es') {?>
+                                <?= $form->field($model, 'subject')->textInput(['class' => 'form-control text-field-box', 'id'=>'subject','placeholder'=>'Asunto'])->label(false) ?>
+                            <?php } ?>
                         </div>
                         <div class="col-md-12 form-group">
+                            <?php  if (Yii::$app->language=='en') {?>
                             <?= $form->field($model, 'body')->textarea(['rows' => 5, 'class' => 'form-control text-field-box','placeholder'=>'Message'])->label(false) ?>
+                            <?php } ?>
+                            <?php  if (Yii::$app->language=='es') {?>
+                                <?= $form->field($model, 'body')->textarea(['rows' => 5, 'class' => 'form-control text-field-box','placeholder'=>'Mensaje'])->label(false) ?>
+                            <?php } ?>
+
+                            <?php  if (Yii::$app->language=='en') {?>
                             <?= Html::submitButton('Submit Now', ['class' => 'button-medium', 'name' => 'contact-button']) ?>
+                            <?php } ?>
+
+                            <?php  if (Yii::$app->language=='es') {?>
+                                <?= Html::submitButton('Enviar', ['class' => 'button-medium', 'name' => 'contact-button']) ?>
+                            <?php } ?>
                         </div>
                     <?php ActiveForm::end(); ?>
 
